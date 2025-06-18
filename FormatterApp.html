@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&S Liquor Formatting Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #844949;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        header {
+            text-align: center;
+            background-color: #af4c98;
+            color: white;
+            padding: 10px 0;
+            border-radius: 8px;
+            font-size: x-large
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 2px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #555;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            resize: none;
+            overflow: none;
+        }
+
+        button {
+            text-align: center;
+            padding: 10px;
+            margin: 15px 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Product Format Generator</h1>
+        </header>
+
+        <section id="productTypes">
+            <h2>Select Product Type </h2>
+            <select id="productType">
+                <option value="" disabled selected>--Select A Product--</option>
+                <option value="Beer"> Beer </option>
+                <option value="Liquor"> Liquor </option>
+                <option value="Tobacco"> Tobacco </option>
+            </select>
+        </section>
+
+        <section id="ProductName">
+            <h2>Enter Product Name</h2>
+            <textarea class="input-field" rows="1" id="PN"
+                placeholder="Enter product name here... | Ex: Svedka"></textarea>
+        </section>
+
+        <section id="ProductFlavor">
+            <h2>Enter Product Flavor</h2>
+            <textarea class="input-field" rows="1" id="PF"
+                placeholder="Enter flavor here, leave empty if none... | Ex: Mango, Blue, Familiar"></textarea>
+        </section>
+
+        <section id="BeerSize">
+            <h2>Select Beer Size</h2>
+            <select name="BeerSize" id="BS">
+                <option value="" disabled selected>--Select A Size--</option>
+                <option value="7FL OZ"> 7FL OZ </option>
+                <option value="12FL OZ"> 12FL OZ </option>
+                <option value="16FL OZ"> 16FL OZ </option>
+                <option value="22FL OZ"> 22FL OZ </option>
+                <option value="24FL OZ"> 24FL OZ </option>
+                <option value="32FL OZ"> 32FL OZ </option>
+                <option value="40FL OZ"> 40FL OZ </option>
+                <option value="64FL OZ"> 64FL OZ </option>
+            </select>
+        </section>
+
+        <section id="LiquorSize">
+            <h2>Select Liquor Size</h2>
+            <select name="LiquorSize" id="LS">
+                <option value="" disabled selected>--Select A Size--</option>
+                <option value="50ML"> 50ML </option>
+                <option value="100ML"> 100ML </option>
+                <option value="200ML"> 200ML </option>
+                <option value="350ML"> 350ML </option>
+                <option value="750ML"> 750ML </option>
+                <option value="1L"> 1L </option>
+                <option value="1.75L"> 1.75L </option>
+            </select>
+        </section>`
+
+        <section id="TobaccoSize">
+            <h2>Select Tobacco Size</h2>
+            <select name="TobaccoSize" id="TS">
+                <option value="" disabled selected>--Select A Size--</option>
+                <option value="Shorts"> Shorts </option>
+                <option value="100's"> 100's </option>
+            </select>
+        </section>
+
+        <section id="BeerType">
+            <h2>Select Beer Container Type</h2>
+            <select id="BT">
+                <option value="" disabled selected>--Select a Container Type--</option>
+                <option value="Bottle"> Bottle </option>
+                <option value="Can"> Can </option>
+            </select>
+        </section>
+
+        <section id="BeerPackSize">
+            <h2>Select Beer Pack Size </h2>
+            <select name="productTypes" id="BPS">
+                <option value="" disabled selected>--Select A Size--</option>
+                <option value="Single"> Single </option>
+                <option value="6 Pack"> 6 Pack </option>
+                <option value="12 Pack"> 12 Pack </option>
+                <option value="24 Pack"> 24 Pack </option>
+                <option value="30 Pack"> 30 Pack </option>
+            </select>
+        </section>
+
+        <button class="pressable" onclick="testing()">
+            Press Me To Generate Formatted Output
+        </button>
+        <footer>
+            <p>&copy; J&S Liquor | All rights reserved :^) </p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

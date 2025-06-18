@@ -1,0 +1,25 @@
+body {
+    background-color: blue;
+};
+
+.page-head {
+    color: aquamarine;
+    text-align: center;
+}
+
+.paragraph {
+    color: aquamarine;
+    padding: 25px 0;
+    margin-left: 20%;
+}
+
+.pressable {
+    padding: 5px;
+}
+
+.random-number {
+    color: aquamarine;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
